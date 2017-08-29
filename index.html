@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div class="screen">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+<div class="navigation">
+	<!-- <form action="#" name="nav_form"> -->
+		<input class="edit" type="submit" value="Edit" name="edit">
+		<input class="styles" type="submit" value="Style" name="styles">
+	<!-- </form> -->
+</div>
+<div class="editor">
+	<div class="editor_text">
+		<form action="#" name="edit_text_form">
+			<textarea name="edit_area" id="text_field" cols="20" rows="18"></textarea>
+			<input class="save" type="button" value="Save" name="save">
+			<input class="add_text" type="button" value="Add" name="add_text">
+		</form>
+	</div>
+	<div class="editor_styles">
+		<form action="#" name="edit_style_form"> 
+			<label> Text size :
+				<label for"size12"><input type="radio" value="12pt" class="fontS" name="font" id="size12">12pt</label>
+				<label for"size14"><input type="radio" value="14pt" class="fontS" name="font" id="size14">14pt</label>
+				<label for"size16"><input type="radio" value="16pt" class="fontS" name="font" id="size16">16pt</label>
+				<label for"size18"><input type="radio" value="18pt" class="fontS" name="font" id="size18">18pt</label>
+				<label for"size20"><input type="radio" value="20pt" class="fontS" name="font" id="size20">20pt</label>
+			</label>
+
+			<label class="label_FF">Font Family :
+				<select name="fontF" id="fontF">
+					<option value="Times New Roman">Times New Roman</option>
+					<option value="Arial">Arial</option>
+					<option value="Tahoma">Tahoma</option>
+					<option value="Verdana">Verdana</option>
+				</select>
+			</label>
+
+			<input class="scrColor" type="button" value="Color" name="scrColor">
+			<input class="scrBack" type="button" value="BgColor" name="scrBack">
+
+			<label for="" class="wrap_b_i">
+				<label for="boldT"><input type="checkbox" id="boldT" class="boldT">Bold text</label>
+				<label for="italicT"><input type="checkbox" id="italicT" class="italicT">Italic text</label>
+			</label>
+		</form>
+
+		<div id="palette_color">
+			<div style="background: red"></div>
+			<div style="background: blue"></div>
+			<div style="background: black"></div>
+			<div style="background: brown"></div>
+			<div style="background: pink"></div>
+			<div style="background: tomato"></div>
+			<div style="background: yellow"></div>
+			<div style="background: grey"></div>
+			<div style="background: orange"></div>
+		</div>
+	</div>
+</div>
+
+<div class="wrap_list_table">
+	<h1>Choose what to add:</h1>
+	<form action="#">
+		<label for="tabl_check"><input type="radio" id="tabl_check" checked>Table</label>
+		<label for="list_check"><input type="radio" id="list_check">List</label>
+	</form>
+
+	<div class="wrap_table">
+		<form action="#">
+			<label for="">Input count of row:<input type="text" class="countTr" name="row"></label>
+			<label for="">Input count of cell:<input type="text" class="countTd" name="td"></label>
+
+			<p>Table style:</p>
+
+			<label for="">Input width of cell:<input type="text" class="widthTd" name="widthTd"></label>
+			<label for="">Input height of cell:<input type="text" class="heightTd" name="heightTd"></label>
+
+			<label style="display: inline;">Border width:<input type="text" class="borderW" name="borderW"></label>
+			Border type:
+			<select name="" id="borderT">
+				<option value="solid">solid</option>
+				<option value="dashed">dashed</option>
+				<option value="double">double</option>
+				<option value="inset">inset</option>
+				<option value="groove">groove</option>
+			</select>
+			Border color:
+			<select name="" id="borderC">
+				<option value="black">black</option>
+				<option value="red">red</option>
+				<option value="green">green</option>
+				<option value="blue">blue</option>
+				<option value="yellow">yellow</option>
+				<option value="pink">pink</option>
+				<option value="brown">brown</option>
+				<option value="tomato">tomato</option>
+			</select>
+			<input type="button" class="table_btn" value="Create">
+		</form>
+
+	</div>
+	<div class="wrap_list">
+		<form action="#">
+			<label for="">Input count of list items:<input type="text" class="countList" name="list"></label>
+			Type of Mark:
+			<select name="" id="mark">
+				<option value="square">square</option>
+				<option value="circle">circle</option>
+			</select>
+			<input type="button" class="list_btn" value="Create">
+		</form>
+	</div>
+</div>
+
+	<script src="js/main.js">
+		
+	</script> 
+</body>
+</html>
+

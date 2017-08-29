@@ -1,0 +1,177 @@
+body {
+	background: black;
+}
+
+.screen {
+	width: 100%;
+	height: 350px;
+	background: green;
+	border-radius: 12px;
+	margin: 5px 0;
+	padding: 10px;
+	box-sizing: border-box;
+	overflow-y: auto;
+}
+
+.navigation {
+	height: 75px;
+	width: 100%;
+	background: red;
+	border-radius: 12px;
+	margin: 5px 0;
+}
+
+
+.navigation {
+	text-align: center;
+}
+.navigation input {
+	padding: 5px 10px;
+	border: 2px solid black;
+	background: yellow;
+	border-radius: 8px;
+	margin-top: 20px;
+	margin-right: 3px;
+	cursor: pointer;
+	transition: 1s; 
+}
+.navigation input:hover, .scrColor:hover, .scrBack:hover, .save:hover, .add_text:hover, .table_btn:hover, .list_btn:hover {
+	background: white;
+	transition: 1s;
+
+}
+
+.editor {
+	width: 100%;
+	height: 350px;
+	background: green;
+	border-radius: 12px;
+	margin: 5px auto;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.editor_text {
+	display: none;
+}
+.editor_text textarea {
+	width: 100%;
+	margin:  0 auto;
+	overflow-y: scroll;
+}
+.editor_text input, .scrColor, .scrBack {
+	float: left;
+	padding: 5px 10px;
+	border: 2px solid black;
+	background: yellow;
+	border-radius: 8px;
+	margin-left: 9px;
+	margin-top: 10px;
+	transition: 1s;
+
+}
+
+.editor_styles {
+	text-align: center;
+	display: none;
+	padding: 15px 0;
+	box-sizing: border-box;
+	position: relative;
+	height: 100%;
+}
+.label_FF {
+	display: block;
+	margin-top: 30px;
+}
+#fontF {
+	border:none;
+	background: red;
+	border-radius: 10px;
+	padding: 3px 2px;
+}
+
+.scrColor ,.scrBack{
+	float: none;
+	margin-top: 40px;
+}
+
+#palette_color {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	right: 340px;
+	top: 130px;
+	display: none;
+}
+
+#palette_color div{
+	width: 50px;
+	height: 50px;
+	float: left;
+	border: 1px solid white;
+	box-sizing: border-box;
+}
+
+.boldT {
+	margin-top: 50px;
+}
+
+.wrap_b_i {
+	display: block;
+}
+
+.wrap_list_table {
+	width: 100%;
+	padding: 25px 300px;
+	background: brown;
+	border-radius: 12px;
+	margin: 5px 0;
+	box-sizing: border-box;
+	display: none;
+}
+.wrap_list_table p {
+	font-weight: bold;
+}
+
+.wrap_table {
+	margin-top: 50px;
+}
+.wrap_table label, .wrap_list label {
+	display: block;
+}
+.countTr, .countTd, .widthTd, .heightTd, .borderW, .countList{
+	width: 40px;
+	background: transparent;
+	border-style: solid;
+	border-width:  0 0 1px 0;
+	border-color: grey;
+	margin-bottom: 20px;
+}
+#borderT, #borderC,#mark {
+	padding: 5px 10px;
+	background: black;
+	color: white;
+	border-radius:8px;
+}
+
+.table_btn, .list_btn {
+	display: block;
+	padding: 7px 14px;
+	border: 2px solid black;
+	background: yellow;
+	border-radius: 8px;
+	transition: 1s;
+	margin-top: 15px;
+}
+
+
+.wrap_list {
+	margin-top: 50px;
+	display: none;
+}
+
+
+#tab td {
+	border:1px solid black;
+}
+
